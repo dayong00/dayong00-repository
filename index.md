@@ -2,7 +2,7 @@
 
 使用 [GitHub的编辑器](https://github.com/dayong00/dayong00.github.io/edit/gh-pages/index.md) 维护和预览博客。
 
-[点击此处](http://www.coolapk.com/u/3808271)来 *酷安* 找我。
+[点击此处](http://www.coolapk.com/u/3808271)来 **酷安** 找我。
 
 ### Markdown
 
