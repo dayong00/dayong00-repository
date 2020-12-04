@@ -1,4 +1,4 @@
-# 欢迎来到** 大勇 **的博客
+# 欢迎来到 **大勇** 的博客
 
 你可以使用 [GitHub的编辑器](https://github.com/dayong00/dayong00.github.io/edit/gh-pages/index.md) 维护和预览博客。
 
