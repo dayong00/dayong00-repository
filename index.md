@@ -1,6 +1,6 @@
-# 欢迎来到**大勇**的博客
+# 欢迎来到** 大勇 **的博客
 
-You can use the [editor on GitHub](https://github.com/dayong00/dayong00.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+你可以使用 [GitHub的编辑器](https://github.com/dayong00/dayong00.github.io/edit/gh-pages/index.md) 维护和预览博客。
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
