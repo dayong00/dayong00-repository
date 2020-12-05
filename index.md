@@ -15,9 +15,10 @@
 + ROM制作
 + 技术交流
 
-##联系方式
+## 联系方式
 
 酷安：[点击此处](http://www.coolapk.com/u/3808271) 关注 **@大勇a**
+
 
 使用 [GitHub的编辑器](https://github.com/dayong00/dayong00.github.io/edit/gh-pages/index.md) 维护和预览博客。
 
