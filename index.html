@@ -1,9 +1,134 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>欢迎访问 大勇 の资源站</title>
-</head>
-<body>
-<h1><center>欢迎访问  <b>大勇</b>  の资源站</center></h1>
-<a href="/resources/home/">主页</a>
+ <head>
+  <meta charset="utf-8">
+  <title>大勇制作   贪吃蛇</title>
+  <style>
+   .div1{
+    height:600px;
+    width:900px;
+    border:solid;
+    background:green;
+   }
+   .snake{
+    height:10px;
+    width:10px;
+    position: fixed; 
+    top:100px;
+    left:100px;
+    border:solid;
+    background:black;
+   }
+   .food{
+    height:10px;
+    width:10px;
+    position: fixed;
+    top:300px;
+    left:400px;
+    background:red;
+   }
+  </style>
+  <script src="jquery-3.2.1.js"></script>
+  <script>
+   $(function(){
+    var count=1;
+    var sm=2000;//初始时速
+    var extent=100;//初始长度
+    function food(){//随机坐标产生食物
+     while(true){
+      let num1 = Math.floor(Math.random()*900);
+      let num2 = Math.floor(Math.random()*600);
+      if(num1>13 && num2>20){
+       $("#food").offset({top:num2,left:num1});
+       break;
+      } 
+     }
+    }
+    
+    function die(){//触碰边缘死亡
+     $(document).off('keydown');
+     alert("死亡！！！");
+    }
+    
+    function eat(sleft,stop){//计算两个盒子相撞证明snake eat到了food
+     $("<div class='snake'></div>").appendTo($(".div1")).offset({top:stop,left:sleft}).fadeOut(extent,function(){$(this).remove()});
+     let eatX = sleft - $("#food").offset().left;
+     let eatY = stop - $("#food").offset().top;
+     
+     if(eatX<10 && eatX>-10 && eatY<10 && eatY>-15){
+      food();//eat到food时调用food产生的方法
+      sm-=50;//每eat到一个food将时速减少100sm
+      extent+=50;
+      $('span').text("得分:"+count++);
+     }
+    }
+    
+    
+    $(document).keydown(function(event){//蛇的动作
+     var keyNum = event.which;  //获取键值
+     if(keyNum==37){//左
+      $("#snake").stop();//用于切换方向时暂停之前的动作
+      $("#snake").animate(
+      {left:10},
+      {
+       duration: sm,
+       step: function() {
+        if($(this).offset().left<11){
+         die();
+        }
+        eat($(this).offset().left,$(this).offset().top);
+       }
+      });
+     }else if(keyNum==38){//上
+      $("#snake").stop();
+      $("#snake").animate(
+      {top:27},
+      {
+       duration: sm,
+       step: function() {
+        if($(this).offset().top<28){
+         die();
+        }
+        eat($(this).offset().left,$(this).offset().top);
+       }
+      });
+     }else if(keyNum==39){//右
+      $("#snake").stop();
+      $("#snake").animate(
+      {left:896},
+      {
+       duration: sm,
+       step: function() {
+        if($(this).offset().left>895){
+         die();
+        }
+        eat($(this).offset().left,$(this).offset().top);
+       }
+      });
+     }else if(keyNum==40){//下
+      $("#snake").stop(); 
+      $("#snake").animate(
+      {top:615},
+      {
+       duration: sm,
+       step: function() {
+        if($(this).offset().top>614){
+         die();
+        }
+        eat($(this).offset().left,$(this).offset().top);
+       }
+      });
+     } 
+    });
+   
+   });
+  </script>
+ </head>
+ <body>
+  <span>得分：</span>
+  <div class="div1">
+   <div id="snake" class="snake"><div>
+   <div id="food" class="food"><div>
+  </div>
 </body>
 </html>
