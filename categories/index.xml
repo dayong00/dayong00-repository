@@ -5,6 +5,34 @@
     <link>https://dayong00.github.io/categories/</link>
     <description>Recent content in Categories on DaYong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://dayong00.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://dayong00.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Releases</title>
+      <link>https://dayong00.github.io/categories/releases/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dayong00.github.io/categories/releases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://dayong00.github.io/categories/blog/</link>
+      <pubDate>Mon, 24 Jul 2017 18:36:00 +0200</pubDate>
+      
+      <guid>https://dayong00.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://dayong00.github.io/categories/uncategorized/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dayong00.github.io/categories/uncategorized/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
